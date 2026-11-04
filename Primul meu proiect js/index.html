@@ -35,6 +35,7 @@
         sayHello() este funcția din main.js.
         TODO:
         Schimbă textul afișat pe buton.
+        Pentru asta, este suficient sa modifici textul dintre tag-urile <button>.
       -->
       <button onclick="sayHello()">Spune salut 👋</button>
     </section>
@@ -50,7 +51,10 @@
         pentru a găsi și modifica acest paragraf.
       -->
       <p id="message">Aici va apărea un mesaj nou.</p>
-      <!-- TODO: Schimbă textul de pe buton. -->
+      <!-- 
+      TODO: Schimbă textul de pe buton. 
+      Vom face schimbarea in main.js. Cauta in main.js functia changeMessage() si modifica textul afisat pe buton.
+      -->
       <button onclick="changeMessage()">Surprinde-mă 💌</button>
     </section>
 
@@ -63,6 +67,8 @@
       <!--
         Funcția greet() folosește variabila myName
         din main.js pentru a afișa un salut.
+        TODO:
+        Cauta variabila myName in main.js si schimba valoarea acesteia cu numele tău.
       -->
       <button onclick="greet()">Salută-mă!</button>
     </section>
@@ -77,6 +83,10 @@
         Funcția changeColor() modifică fundalul.
         Culorile sunt definite în main.js
         folosind coduri HEX, de exemplu #FFB6C1.
+        Putem alege o culoare de pe https://htmlcolorcodes.com/
+
+        TODO:
+        Cauta functia changeColor() in main.js si schimba codul HEX din main.js cu culoarea dorită.
       -->
       <button onclick="changeColor()">Schimbă culoarea 🌈</button>
     </section>
@@ -91,7 +101,10 @@
         Funcția makeTextBigger() modifică
         dimensiunea textului cu id="message".
         TODO:
-        În main.js schimbă 30px în 50px.
+        Cauta in main.js functia makeTextBigger() si schimba 30px în 50px.
+
+        px se refera la unitatea de masura pentru dimensiunea textului in CSS. Este o unitate des
+        folosita in CSS, mai ales pentru dimensiunea textului. 
       -->
       <button onclick="makeTextBigger()">Mărește mesajul 🔎</button>
     </section>
@@ -111,6 +124,9 @@
       <!--
         La fiecare click apelăm increaseCount().
         Funcția crește valoarea contorului.
+
+        TODO:
+        Cauta in main.js functia increaseCount() si modifica valoarea adaugata la contor. Modifica +1 cu +5 si vezi ce se intampla.
       -->
       <button onclick="increaseCount()">+1 Click</button>
     </section>
@@ -125,6 +141,9 @@
         span marchează o parte mică din text.
         JavaScript va înlocui semnul întrebării
         cu emoji-ul salvat în variabila mood.
+
+        TODO:
+        Cauta in main.js variabila mood si schimba emoji-ul cu unul care te reprezinta.
       -->
       <p>Starea mea: <span id="mood">❓</span></p>
       <button onclick="showMood()">Arată emoji-ul</button>
@@ -144,7 +163,7 @@
       <!--
         Funcția hideMessage() ascunde paragraful.
         TODO:
-        Schimbă în main.js "none" în "block".
+        Cauta functia hideMessage() în main.js si schimba "none" în "block".
       -->
       <button onclick="hideMessage()">Ascunde mesajul 🪄</button>
     </section>
