@@ -1,0 +1,154 @@
+
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spațiul meu interactiv</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    BODY conține tot ce vedem pe pagină:
+    titluri, texte, butoane și imagini.
+  -->
+  <!--
+    main reprezintă conținutul principal.
+    class="card" aplică stilurile definite în CSS.
+  -->
+  <main class="card">
+    <p class="tag">PRIMUL MEU PROIECT JAVASCRIPT</p>
+    <h1>Spațiul meu interactiv ✨</h1>
+    <p>Personalizează pagina și fă-o interactivă!</p>
+
+    <!-- ====================================== -->
+    <!-- EXERCIȚIUL 1: PRIMUL MEU CLICK -->
+    <!-- ====================================== -->
+
+    <section>
+      <h2>1. Primul meu click 👋</h2>
+      <p>Ce se întâmplă când apeși?</p>
+      <!--
+        button creează un buton.
+        onclick înseamnă:
+        "Când apăsăm butonul, execută o funcție".
+        sayHello() este funcția din main.js.
+        TODO:
+        Schimbă textul afișat pe buton.
+      -->
+      <button onclick="sayHello()">Spune salut 👋</button>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- EXERCIȚIUL 2: MESAJ SURPRIZĂ -->
+    <!-- ====================================== -->
+    <section>
+      <h2>2. Mesaj surpriză 💌</h2>
+      <!--
+        id este un nume unic pentru un element HTML.
+        JavaScript folosește id="message"
+        pentru a găsi și modifica acest paragraf.
+      -->
+      <p id="message">Aici va apărea un mesaj nou.</p>
+      <!-- TODO: Schimbă textul de pe buton. -->
+      <button onclick="changeMessage()">Surprinde-mă 💌</button>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- EXERCIȚIUL 3: SALUT PERSONALIZAT -->
+    <!-- ====================================== -->
+    <section>
+      <h2>3. Salut personalizat 😄</h2>
+      <p>Poți face pagina să te salute pe nume?</p>
+      <!--
+        Funcția greet() folosește variabila myName
+        din main.js pentru a afișa un salut.
+      -->
+      <button onclick="greet()">Salută-mă!</button>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- EXERCIȚIUL 4: COLOREAZĂ PAGINA -->
+    <!-- ====================================== -->
+    <section>
+      <h2>4. Colorează pagina 🌈</h2>
+      <p>Ce culoare ai alege pentru pagina ta?</p>
+      <!--
+        Funcția changeColor() modifică fundalul.
+        Culorile sunt definite în main.js
+        folosind coduri HEX, de exemplu #FFB6C1.
+      -->
+      <button onclick="changeColor()">Schimbă culoarea 🌈</button>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- EXERCIȚIUL 5: TEXT URIAȘ -->
+    <!-- ====================================== -->
+    <section>
+      <h2>5. Text uriaș 🔎</h2>
+      <p>Hai să facem mesajul surpriză mai mare!</p>
+      <!--
+        Funcția makeTextBigger() modifică
+        dimensiunea textului cu id="message".
+        TODO:
+        În main.js schimbă 30px în 50px.
+      -->
+      <button onclick="makeTextBigger()">Mărește mesajul 🔎</button>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- EXERCIȚIUL 6: CONTOR -->
+    <!-- ====================================== -->
+    <section>
+      <h2>6. Numără click-urile 🔢</h2>
+      <p>De câte ori poți apăsa butonul?</p>
+      <!--
+        strong afișează textul îngroșat.
+        id="counter" este folosit în JavaScript
+        pentru a modifica numărul afișat.
+      -->
+      <p>Număr de click-uri: <strong id="counter">0</strong></p>
+      <!--
+        La fiecare click apelăm increaseCount().
+        Funcția crește valoarea contorului.
+      -->
+      <button onclick="increaseCount()">+1 Click</button>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- EXERCIȚIUL 7: EMOJI -->
+    <!-- ====================================== -->
+    <section>
+      <h2>7. Cum te simți astăzi? 😊</h2>
+      <p>Alege un emoji care te reprezintă!</p>
+      <!--
+        span marchează o parte mică din text.
+        JavaScript va înlocui semnul întrebării
+        cu emoji-ul salvat în variabila mood.
+      -->
+      <p>Starea mea: <span id="mood">❓</span></p>
+      <button onclick="showMood()">Arată emoji-ul</button>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- EXERCIȚIUL 8: ASCUNDE TEXTUL -->
+    <!-- ====================================== -->
+
+    <section>
+      <h2>8. Magie cu textul 🪄</h2>
+      <!--
+        Acest paragraf are un id separat,
+        pentru a nu afecta exercițiul 2.
+      -->
+      <p id="secretMessage">Acesta este un mesaj secret! 🤫</p>
+      <!--
+        Funcția hideMessage() ascunde paragraful.
+        TODO:
+        Schimbă în main.js "none" în "block".
+      -->
+      <button onclick="hideMessage()">Ascunde mesajul 🪄</button>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

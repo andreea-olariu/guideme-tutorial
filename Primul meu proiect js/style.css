@@ -1,0 +1,217 @@
+
+/*
+  BINE AI VENIT ÎN CSS! 🎨
+
+  CSS controlează aspectul paginii HTML.
+
+  Cu CSS putem modifica:
+  - Culorile
+  - Dimensiunea textului
+  - Fonturile
+  - Spațiul dintre elemente
+  - Aspectul butoanelor
+
+  Culorile sunt scrise folosind coduri HEX.
+
+  Exemple:
+  #FFFFFF = alb
+  #000000 = negru
+  #FFB6C1 = roz deschis
+  #ADD8E6 = albastru deschis
+  #E6E6FA = lavandă
+
+  TODO:
+  Încearcă să schimbi câteva culori!
+*/
+
+
+/* ==========================================
+   1. SETĂRI GENERALE
+   ========================================== */
+
+/*
+  * înseamnă că regula se aplică
+  tuturor elementelor din pagină.
+
+  box-sizing ajută la calcularea
+  dimensiunilor elementelor.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* ==========================================
+   2. ASPECTUL PAGINII
+   ========================================== */
+
+/*
+  body reprezintă întreaga pagină.
+
+  margin = spațiul exterior
+  padding = spațiul interior
+  font-family = tipul fontului
+  background = culoarea fundalului
+  color = culoarea textului
+
+  TODO:
+  Schimbă culoarea fundalului #F4EEFF.
+*/
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  font-family: Arial, sans-serif;
+  background: #F4EEFF;
+  color: #36304A;
+
+  /* Schimbarea culorii se face treptat */
+  transition: background-color 0.25s;
+}
+
+
+/* ==========================================
+   3. CARDUL PRINCIPAL
+   ========================================== */
+
+/*
+  .card se referă la elementul HTML
+  care are class="card".
+
+  max-width = lățimea maximă
+  border-radius = rotunjirea colțurilor
+  box-shadow = umbra elementului
+*/
+
+.card {
+  max-width: 620px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 22px;
+  background: #FFFFFF;
+  box-shadow: 0 12px 40px #49336A18;
+}
+
+
+/* ==========================================
+   4. ETICHETA DE SUS
+   ========================================== */
+
+/*
+  .tag controlează textul:
+  "PRIMUL MEU PROIECT JAVASCRIPT"
+
+  letter-spacing = spațiul dintre litere
+
+  TODO:
+  Schimbă culoarea textului în #FF69B4.
+*/
+
+.tag {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #8864B8;
+}
+
+
+/* ==========================================
+   5. TITLUL PRINCIPAL
+   ========================================== */
+
+/*
+  h1 este titlul principal al paginii.
+
+  TODO:
+  Schimbă dimensiunea din 32px în 40px.
+*/
+
+h1 {
+  font-size: 32px;
+}
+
+
+/* ==========================================
+   6. SECȚIUNILE CU EXERCIȚII
+   ========================================== */
+
+/*
+  section reprezintă fiecare exercițiu.
+
+  border-top adaugă o linie de separare.
+  padding adaugă spațiu în interior.
+*/
+
+section {
+  border-top: 1px solid #EEE7F5;
+  padding: 18px 0;
+}
+
+
+/* ==========================================
+   7. TITLURILE EXERCIȚIILOR
+   ========================================== */
+
+/*
+  h2 reprezintă titlurile exercițiilor.
+
+  TODO:
+  Schimbă dimensiunea textului.
+*/
+
+h2 {
+  font-size: 19px;
+}
+
+
+/* ==========================================
+   8. ASPECTUL BUTOANELOR
+   ========================================== */
+
+/*
+  button controlează toate butoanele.
+
+  background = culoarea butonului
+  color = culoarea textului
+  border-radius = rotunjirea colțurilor
+  cursor: pointer = cursor în formă de mână
+
+  TODO:
+  Schimbă culoarea butoanelor!
+
+  Exemple:
+  #FF69B4 = roz
+  #4169E1 = albastru
+  #20B2AA = turcoaz
+*/
+
+button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 10px;
+  background: #7855B5;
+  color: #FFFFFF;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+/* ==========================================
+   9. EFECTUL LA TRECEREA CU MOUSE-UL
+   ========================================== */
+
+/*
+  :hover înseamnă că mouse-ul
+  se află deasupra elementului.
+
+  Când trecem cu mouse-ul peste buton,
+  culoarea lui se schimbă.
+
+  TODO:
+  Schimbă culoarea #60418F.
+*/
+
+button:hover {
+  background: #60418F;
+}

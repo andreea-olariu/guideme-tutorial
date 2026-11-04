@@ -1,0 +1,26 @@
+/* CSS = felul in care arata aplicatia. JavaScript schimba clasa de pe body. */
+:root { font-family: 'Trebuchet MS', Arial, sans-serif; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 32px 18px; transition: background-color .5s ease, color .5s ease; }
+body.mood-happy { --bg:#fff2c9; --ink:#614d36; --accent:#c38a31; --circle:#ffe39a; --panel:#fffaf0; background:var(--bg); color:var(--ink); }
+body.mood-calm { --bg:#e0f0e6; --ink:#355f53; --accent:#538e78; --circle:#c6e4d1; --panel:#f5fcf7; background:var(--bg); color:var(--ink); }
+body.mood-sad { --bg:#e3eafa; --ink:#425677; --accent:#6b86b5; --circle:#cbd9f3; --panel:#f6f8ff; background:var(--bg); color:var(--ink); }
+.app { width:min(100%, 650px); text-align:center; padding: 44px 25px 28px; }
+.eyebrow { font-size:12px; letter-spacing:3px; font-weight:700; color:var(--accent); }
+.eyebrow span { font-size:18px; }
+h1 { font-family:Georgia, 'Times New Roman', serif; font-size:clamp(34px,6vw,58px); line-height:1.13; letter-spacing:-1.5px; margin:23px 0 12px; font-weight:normal; }
+h1 em { color:var(--accent); }
+.intro { opacity:.78; font-size:15px; margin:0 auto 26px; line-height:1.7; }
+.mood-illustration { width:184px; height:184px; margin:0 auto 24px; background:var(--circle); border-radius:50%; display:grid; place-items:center; box-shadow:0 16px 42px rgba(60,60,60,.05); transition:background-color .5s ease; }
+#moodEmoji { font-size:83px; line-height:1; display:block; }
+.message { font-family:Georgia, 'Times New Roman', serif; font-size:clamp(25px,4vw,34px); margin:0 0 9px; }
+.description { font-size:15px; opacity:.8; margin:0 0 34px; }
+.mood-buttons { display:flex; gap:13px; flex-wrap:wrap; justify-content:center; }
+.mood-button { min-width:120px; border:1px solid rgba(80,80,80,.13); border-radius:100px; background:var(--panel); padding:14px 19px; font-size:15px; color:var(--ink); cursor:pointer; box-shadow:0 6px 15px rgba(0,0,0,.035); transition:transform .2s ease, background .3s ease, box-shadow .2s ease; }
+.mood-button:hover { transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,.09); }
+.mood-button:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+.mood-button.active { background:var(--ink); color:white; border-color:var(--ink); }
+.mood-button span { margin-left:6px; }
+.footer-note { margin-top:44px; opacity:.65; font-size:12px; letter-spacing:.5px; }
+.footer-note span { color:var(--accent); font-size:17px; }
+@media(max-width:450px){.app{padding:15px 5px}.mood-illustration{width:155px;height:155px}.mood-button{min-width:95px;padding:12px 14px}.mood-buttons{gap:8px}}

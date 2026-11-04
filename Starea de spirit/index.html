@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starea de spirit | Cum te simti?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mood-happy">
+  <main class="app">
+    <div class="eyebrow">STAREA MEA DE SPIRIT<span>✦</span></div>
+    <h1>Cum te <em>simti</em> azi?</h1>
+    <p class="intro">Alege starea ta de spirit si vezi cum pagina se schimba odata cu tine.</p>
+    <div class="mood-illustration" aria-live="polite"><span id="moodEmoji" role="img" aria-label="Sunshine">☀️</span></div>
+    <p id="moodMessage" class="message" aria-live="polite">Astazi este ziua ta!</p>
+    <div class="mood-buttons" aria-label="Choose your mood">
+      <button class="mood-button active" type="button" data-mood="happy" aria-pressed="true" onclick="changeMood('fericita')">😊 <span>Fericita</span></button>
+      <button class="mood-button" type="button" data-mood="calm" aria-pressed="false" onclick="changeMood('calma')">🌿 <span>Calma</span></button>
+      <button class="mood-button" type="button" data-mood="sad" aria-pressed="false" onclick="changeMood('trista')">🌧️ <span>Trista</span></button>
+    </div>
+    <p class="footer-note">Fiecare stare de spirit este binevenita aici! <span>♡</span></p>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
